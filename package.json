@@ -2,7 +2,7 @@
   "name": "invoice-generator",
   "version": "0.1.0",
   "homepage": "https://diestrocorleone.github.io/react-invoice-generator/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",
