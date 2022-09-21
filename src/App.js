@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { nanoid } from "nanoid";
 import { Container, Col, Row, Form, Button, Table } from "react-bootstrap";
+import PdfCreator from "./components/PdfCreator";
 
 export default function App() {
   const [invoice, setInvoice] = useState([]);
@@ -19,7 +20,6 @@ export default function App() {
         [name]: value,
       };
     });
-    console.log(formData);
   };
 
   const addToInvoice = () => {
@@ -29,8 +29,6 @@ export default function App() {
       });
 
       setFormData({ itemName: "", price: "" });
-
-      console.log(invoice);
     } else {
       alert("Please fill in all the fields.");
     }
@@ -110,22 +108,25 @@ export default function App() {
       <hr />
       <main className="text-center">
         {invoice.length > 0 ? (
-          <Table bordered striped hover>
-            <thead>
-              <tr>
-                <th>Delete</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              {renderItemList}{" "}
-              <tr>
-                <td colSpan="2">Total:</td>
-                <td colSpan="1">$ {sumTotal}</td>
-              </tr>
-            </tbody>
-          </Table>
+          <Fragment>
+            <Table bordered striped hover id="pdf-export">
+              <thead>
+                <tr>
+                  <th>Delete</th>
+                  <th>Item Name</th>
+                  <th>Item Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {renderItemList}{" "}
+                <tr>
+                  <td colSpan="2">Total:</td>
+                  <td colSpan="1">$ {sumTotal}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <PdfCreator id="#pdf-export" />
+          </Fragment>
         ) : (
           <div>
             <h1>Add items in the form above</h1>

@@ -10,6 +10,8 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react": ">=16.14.8",
     "bootstrap": "^5.2.1",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25",
     "nanoid": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
