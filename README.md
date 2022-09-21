@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Do
 
-[] Add item to list when pressing 'Enter'.
+- [] Add item to list when pressing 'Enter'.
 
 ## Available Scripts
 
