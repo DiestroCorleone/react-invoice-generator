@@ -3,6 +3,8 @@
 Tiny app that allows you to add items and price to be displayed in a table, displaying the total price of said items. You can also delete items from the list.
 
 Inspired by [this Twitter thread](https://twitter.com/fmontes/status/1535427477459197952).
+Code on [StackBlitz](https://stackblitz.com/edit/react-31jrxv?file=src/App.js).
+StackBlitz [Demo App](https://react-31jrxv.stackblitz.io).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,6 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Bootstrap](https://www.npmjs.com/package/bootstrap)
 - [React Bootstrap](https://www.npmjs.com/package/react-bootstrap)
 - [nanoid](https://www.npmjs.com/package/nanoid)
+- [jspdf](https://www.npmjs.com/package/jspdf)
+- [jspdf-autotable](https://www.npmjs.com/package/jspdf-autotable)
 
 ## Available Scripts
 
