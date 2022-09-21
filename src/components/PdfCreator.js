@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { jsPDF } from "jspdf";
 import autoTable from "jspdf-autotable";
 
@@ -10,5 +11,5 @@ export default function PdfCreator(props) {
     doc.save("export.pdf");
   }
 
-  return <button onClick={exportTable}>Export PDF</button>;
+  return <Button onClick={exportTable}>Export PDF</Button>;
 }
